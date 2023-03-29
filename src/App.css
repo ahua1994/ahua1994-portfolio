@@ -1,4 +1,10 @@
 .App {
   text-align: center;
   background-color: #222;
+  min-height: 100vh;
+  color: white; 
 } 
+body {
+  margin: 0;
+  padding: 0; 
+}
