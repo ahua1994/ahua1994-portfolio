@@ -7,7 +7,6 @@ const Skills = () => {
     const { skills } = useContext(CVContext);
     return (
         <div className="Skills">
-            Skills
             {skills.map(x => (
                 <SkillBadge x={x} key={x.name} />
             ))}

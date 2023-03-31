@@ -7,7 +7,6 @@ const Certs = () => {
     const { certs } = useContext(CVContext);
     return (
         <div className="Certs">
-            Certificates
             {certs.map(x => (
                 <CertCard x={x} key={x.name} />
             ))}
