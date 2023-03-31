@@ -7,12 +7,9 @@ const Projects = () => {
     const { projects } = useContext(CVContext);
     return (
         <div className="Portfolio">
-            Portfolio
-            <div className="projects">
-                {projects.map(x => (
-                    <ProjectCard x={x} key={x.title} />
-                ))}
-            </div>
+            {projects.map(x => (
+                <ProjectCard x={x} key={x.title} />
+            ))}
         </div>
     );
 };
