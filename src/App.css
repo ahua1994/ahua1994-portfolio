@@ -1,10 +1,50 @@
 .App {
   text-align: center;
-  background-color: #222;
+  background-color: black;
   min-height: 100vh;
   color: white; 
 } 
 body {
   margin: 0;
   padding: 0; 
+}
+@font-face {
+  font-family: RobotInvaders;
+  src: url("./helpers/fonts/RobotInvaders.ttf");
+}
+@font-face {
+  font-family: RobotInvadersItalic;
+  src: url("./helpers/fonts/RobotInvadersItalic.ttf");
+}
+@font-face {
+  font-family: DroidLover;
+  src: url("./helpers/fonts/DroidLover.ttf");
+}
+@font-face {
+  font-family: DroidLoverItalic;
+  src: url("./helpers/fonts/DroidLoverItalic.ttf");
+}
+@font-face {
+  font-family: DroidLoverExpanded;
+  src: url("./helpers/fonts/DroidLoverExpanded.ttf");
+}
+@font-face {
+  font-family: DroidLoverExpandedItalic;
+  src: url("./helpers/fonts/DroidLoverExpandedItalic.ttf");
+}
+@font-face {
+  font-family: DroidLover3D;
+  src: url("./helpers/fonts/DroidLover3D.ttf");
+}
+@font-face {
+  font-family: DroidLover3DItalic;
+  src: url("./helpers/fonts/DroidLover3DItalic.ttf");
+}
+@font-face {
+  font-family: DroidLover3DExpanded;
+  src: url("./helpers/fonts/DroidLover3DExpanded.ttf");
+}
+@font-face {
+  font-family: DroidLover3DExpandedItalic;
+  src: url("./helpers/fonts/DroidLover3DExpandedItalic.ttf");
 }

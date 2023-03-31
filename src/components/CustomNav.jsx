@@ -12,6 +12,12 @@ const CustomNav = () => {
                 <div className="nav-btn" onClick={() => navigate("/projects")}>
                     Projects
                 </div>
+                <div className="nav-btn" onClick={() => navigate("/certifications")}>
+                    Certs
+                </div>
+                <div className="nav-btn" onClick={() => navigate("/skills")}>
+                    Skills
+                </div>
                 <div className="nav-btn" onClick={() => navigate("/resume")}>
                     Resume
                 </div>
