@@ -1,4 +1,13 @@
 import { createContext } from "react";
+import js from "../helpers/images/js.png";
+import ts from "../helpers/images/ts.png";
+import python from "../helpers/images/python.png";
+import react from "../helpers/images/react.png";
+import pg from "../helpers/images/pg.png";
+import html from "../helpers/images/html.png";
+import css from "../helpers/images/css.png";
+import django from "../helpers/images/django.png";
+import git from "../helpers/images/git.png";
 
 export const CVContext = createContext();
 
@@ -49,15 +58,15 @@ const CVContextProvider = ({ children }) => {
     ];
 
     const skills = [
-        { name: "React", img: "" },
-        { name: "JavaScript", img: "" },
-        { name: "TypeScript", img: "" },
-        { name: "Python", img: "" },
-        { name: "Django", img: "" },
-        { name: "PostgreSQL", img: "" },
-        { name: "Git", img: "" },
-        { name: "HTML", img: "" },
-        { name: "CSS", img: "" },
+        { name: "React", img: react },
+        { name: "JavaScript", img: js },
+        { name: "TypeScript", img: ts },
+        { name: "Python", img: python },
+        { name: "Django", img: django },
+        { name: "PostgreSQL", img: pg },
+        { name: "Git", img: git },
+        { name: "HTML", img: html },
+        { name: "CSS", img: css },
     ];
 
     const certs = [
@@ -71,7 +80,7 @@ const CVContextProvider = ({ children }) => {
         { name: "React (Basic)", img: "", org: "HackerRank" },
         { name: "JavaScript (Basic)", img: "", org: "HackerRank" },
         { name: "JavaScript (Intermediate)", img: "", org: "HackerRank" },
-        { name: "JavaScript Algorithms & Data Structures", img: "", org: "HackerRank" },
+        { name: "Python (Basic)", img: "", org: "HackerRank" },
     ];
 
     return <CVContext.Provider value={{ projects, skills, certs }}>{children}</CVContext.Provider>;

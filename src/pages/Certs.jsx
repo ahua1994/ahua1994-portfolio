@@ -8,7 +8,7 @@ const Certs = () => {
             Certificates
             <div className="certs">
                 {certs.map(x => (
-                    <h1>{x.name}</h1>
+                    <h1 key={x.name}>{x.name}</h1>
                 ))}
             </div>
         </div>

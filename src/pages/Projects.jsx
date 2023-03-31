@@ -9,7 +9,7 @@ const Projects = () => {
             Portfolio
             <div className="projects">
                 {projects.map(x => (
-                    <h1>{x.title}</h1>
+                    <h1 key={x.title}>{x.title}</h1>
                 ))}
             </div>
         </div>
