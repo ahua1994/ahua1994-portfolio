@@ -8,6 +8,17 @@ import html from "../helpers/images/html.png";
 import css from "../helpers/images/css.png";
 import django from "../helpers/images/django.png";
 import git from "../helpers/images/git.png";
+import cFrontend from "../helpers/certs/ClaruswayFE.png";
+import cHtmlCss from "../helpers/certs/ClaruswayHTMLCSS.png";
+import cJS from "../helpers/certs/ClaruswayJS.png";
+import cReact from "../helpers/certs/ClaruswayReact.png";
+import cs50x from "../helpers/certs/CS50x.png";
+import cs50p from "../helpers/certs/CS50P.png";
+import fCCJS from "../helpers/certs/FCC_JS_Algorithms.png";
+import hrJS from "../helpers/certs/HRJS.png";
+import hrJS2 from "../helpers/certs/HRJS2.png";
+import hrPython from "../helpers/certs/HRPython.png";
+import hrReact from "../helpers/certs/HRReact.png";
 
 export const CVContext = createContext();
 
@@ -70,17 +81,17 @@ const CVContextProvider = ({ children }) => {
     ];
 
     const certs = [
-        { name: "CS50x Certificate", img: "", org: "Harvard" },
-        { name: "CS50P Certificate", img: "", org: "Harvard" },
-        { name: "React", img: "", org: "Clarusway" },
-        { name: "Frontend Developer", img: "", org: "Clarusway" },
-        { name: "JavaScript", img: "", org: "Clarusway" },
-        { name: "HTMLCSS", img: "", org: "Clarusway" },
-        { name: "JavaScript Algorithms & Data Structures", img: "", org: "freeCodeCamp" },
-        { name: "React (Basic)", img: "", org: "HackerRank" },
-        { name: "JavaScript (Basic)", img: "", org: "HackerRank" },
-        { name: "JavaScript (Intermediate)", img: "", org: "HackerRank" },
-        { name: "Python (Basic)", img: "", org: "HackerRank" },
+        { name: "CS50x Certificate", img: cs50x, org: "Harvard" },
+        { name: "CS50P Certificate", img: cs50p, org: "Harvard" },
+        { name: "React", img: cReact, org: "Clarusway" },
+        { name: "Frontend Developer", img: cFrontend, org: "Clarusway" },
+        { name: "JavaScript", img: cJS, org: "Clarusway" },
+        { name: "HTMLCSS", img: cHtmlCss, org: "Clarusway" },
+        { name: "JavaScript Algorithms & Data Structures", img: fCCJS, org: "freeCodeCamp" },
+        { name: "React (Basic)", img: hrReact, org: "HackerRank" },
+        { name: "JavaScript (Intermediate)", img: hrJS2, org: "HackerRank" },
+        { name: "JavaScript (Basic)", img: hrJS, org: "HackerRank" },
+        { name: "Python (Basic)", img: hrPython, org: "HackerRank" },
     ];
 
     return <CVContext.Provider value={{ projects, skills, certs }}>{children}</CVContext.Provider>;

@@ -1,20 +1,16 @@
 import { useContext } from "react";
 import "./Skills.scss";
 import { CVContext } from "../contexts/CVContext";
+import SkillBadge from "../components/SkillBadge";
 
 const Skills = () => {
     const { skills } = useContext(CVContext);
     return (
         <div className="Skills">
             Skills
-            <div className="skills">
-                {skills.map(x => (
-                    <div key={x.name}>
-                        <h1>{x.name}</h1>
-                        <img src={x.img} alt={x.name} />
-                    </div>
-                ))}
-            </div>
+            {skills.map(x => (
+                <SkillBadge x={x} key={x.name} />
+            ))}
         </div>
     );
 };

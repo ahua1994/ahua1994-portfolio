@@ -1,16 +1,16 @@
+import "./Certs.scss";
 import { useContext } from "react";
 import { CVContext } from "../contexts/CVContext";
+import CertCard from "../components/CertCard";
 
 const Certs = () => {
     const { certs } = useContext(CVContext);
     return (
         <div className="Certs">
             Certificates
-            <div className="certs">
-                {certs.map(x => (
-                    <h1 key={x.name}>{x.name}</h1>
-                ))}
-            </div>
+            {certs.map(x => (
+                <CertCard x={x} key={x.name} />
+            ))}
         </div>
     );
 };

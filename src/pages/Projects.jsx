@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CVContext } from "../contexts/CVContext";
 import "./Projects.scss";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
     const { projects } = useContext(CVContext);
@@ -9,7 +10,7 @@ const Projects = () => {
             Portfolio
             <div className="projects">
                 {projects.map(x => (
-                    <h1 key={x.title}>{x.title}</h1>
+                    <ProjectCard x={x} key={x.title} />
                 ))}
             </div>
         </div>
