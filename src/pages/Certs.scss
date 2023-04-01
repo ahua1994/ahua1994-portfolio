@@ -1,5 +1,22 @@
 .Certs {
+    // display: grid ;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // margin: 0 10rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
-        width: 61%;
+        // width: 61%;
+        width: 1080px;
+        height: 800px;
+        animation: both ;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+    svg{
+        color: gray; 
+        &:hover{
+          color:white;  
+        }  
+        width: 18rem;
     }
 }
