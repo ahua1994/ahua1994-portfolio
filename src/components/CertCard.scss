@@ -1,13 +1,10 @@
 .CertCard {
-    width: 50%;  
+    width: 450px;   
     border: 1px solid white;
-    margin: 1rem auto;
+    margin: 1rem auto; 
     img {
         border-radius: 15px;
         width: 450px;
-        cursor: pointer;
-    }
-    &:hover{
-        transform: scale(110%)
-    }
+        cursor: pointer; 
+    } 
 }
