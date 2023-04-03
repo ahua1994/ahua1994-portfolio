@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  background-color: black;
-  min-height: 100vh;
-  color: white; 
+  min-height: 100vh; 
+  color: white;  
 } 
 body {
+  background-color: black;
   margin: 0;
   padding: 0; 
 }

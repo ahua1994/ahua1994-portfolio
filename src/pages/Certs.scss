@@ -1,22 +1,51 @@
-.Certs {
-    // display: grid ;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // margin: 0 10rem; 
+.Certs { 
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-        // width: 61%;
-        width: 1080px;
-        height: 800px;
-        animation: both ;
-        animation: name duration timing-function delay iteration-count direction fill-mode;
+    .carousel {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        img {
+            width: 1080px;
+            height: 800px;   
+            border-radius: 15px; 
+        }
+        .slide{  
+            position: absolute;  
+            top: 0; 
+            transition: 1.5s ease; 
+            opacity: 0;
+        }
+        .active {
+            position: absolute;  
+            top: 0; 
+            transition: 1.5s ease;
+            opacity: 1; 
+            z-index: 10;
+        } 
+        .under {
+            position: absolute;
+            transition: 1.5s ease; 
+            top: 0; 
+        }
     }
     svg{
         color: gray; 
         &:hover{
           color:white;  
-        }  
-        width: 18rem;
+        }   
     }
-}
+    .left {
+        position: absolute;
+        left: 10%;
+        top: 45%;
+    }
+    .right {
+        position: absolute;
+        right: 10%;
+        top: 45%;
+    }
+} 
