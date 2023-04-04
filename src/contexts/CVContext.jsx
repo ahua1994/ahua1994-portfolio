@@ -82,7 +82,7 @@ const CVContextProvider = ({ children }) => {
 
     const certs = [
         { name: "CS50x Certificate", img: cs50x, org: "Harvard" },
-        { name: "React", img: cReact, org: "Clarusway" },
+        { name: "React Certificate", img: cReact, org: "Clarusway" },
         { name: "CS50P Certificate", img: cs50p, org: "Harvard" },
         { name: "Frontend Developer", img: cFrontend, org: "Clarusway" },
         { name: "JavaScript (Intermediate)", img: hrJS2, org: "HackerRank" },

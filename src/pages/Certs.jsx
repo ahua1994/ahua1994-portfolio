@@ -6,14 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Certs = () => {
     const { certs } = useContext(CVContext);
+
     const [main, setMain] = useState(0);
     const [under, setUnder] = useState(0);
-    // const [enlarge, setEnlarge] = useState(false);
-    console.log(main, under);
+
     const handleRight = () => {
         setUnder(main);
         setMain(main < certs.length - 1 ? main + 1 : 0);
     };
+
     const handleLeft = () => {
         setUnder(main);
         setMain(main > 0 ? main - 1 : certs.length - 1);
@@ -22,9 +23,6 @@ const Certs = () => {
     return (
         <>
             <div className="Certs">
-                {/* {certs.map(x => (
-                <CertCard x={x} key={x.name} />
-            ))} */}
                 <FontAwesomeIcon
                     className="left"
                     size="3x"
@@ -48,16 +46,19 @@ const Certs = () => {
                     onClick={handleRight}
                 />
             </div>
-            <div className="thumbnail">
+            <div className="thumbnails">
                 {certs.map((x, i) => (
-                    <img
-                        src={x.img}
-                        className={i === main ? "active" : ""}
-                        onClick={() => {
-                            setUnder(main);
-                            setMain(i);
-                        }}
-                    />
+                    <div className="thumbnail">
+                        <p>{x.org + " " + x.name}</p>
+                        <img
+                            src={x.img}
+                            className={i === main ? "active" : ""}
+                            onClick={() => {
+                                setUnder(main);
+                                setMain(i);
+                            }}
+                        />
+                    </div>
                 ))}
             </div>
         </>
