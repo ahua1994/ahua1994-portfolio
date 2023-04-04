@@ -67,8 +67,7 @@
         &.active  {
             box-shadow: 0 0 5px 5px #ffffff44;
             opacity: 1;
-        } 
-        
+        }  
     }
 }
 @media screen and (max-width:1600px) {
@@ -80,15 +79,11 @@
                 height: 666px;  
             } 
         }
-        .left {
-            position: absolute;
-            left: 10%;
-            top: 35%;
+        .left {  
+            top: 40%;
         }
-        .right {
-            position: absolute;
-            right: 10%;
-            top: 35%;
+        .right {  
+            top: 40%;
         }
     }
 }
@@ -101,15 +96,13 @@
                 height: 517px;  
             } 
         }
-        .left {
-            position: absolute;
+        .left { 
             left: 4%;
-            top: 25%;
+            top: 35%;
         }
-        .right {
-            position: absolute;
+        .right { 
             right: 4%;
-            top: 25%;
+            top: 35%;
         }
     }
 }
@@ -122,15 +115,11 @@
                 height: 369px;  
             } 
         }
-        .left {
-            position: absolute;
-            left: 3%;
-            top: 15%;
+        .left { 
+            left: 3%; 
         }
-        .right {
-            position: absolute;
-            right: 3%;
-            top: 15%;
+        .right { 
+            right: 3%; 
         }
     }
 }
@@ -143,15 +132,11 @@
                 height: 295px;  
             } 
         }
-        .left {
-            position: absolute;
-            left: 3%;
-            top: 12%;
+        .left {  
+            top: 35%;
         }
-        .right {
-            position: absolute;
-            right: 3%;
-            top: 12%;
+        .right {  
+            top: 35%;
         }
     }
 }
