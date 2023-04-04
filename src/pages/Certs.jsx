@@ -1,7 +1,6 @@
 import "./Certs.scss";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { CVContext } from "../contexts/CVContext";
-import CertCard from "../components/CertCard";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -21,28 +20,47 @@ const Certs = () => {
     };
 
     return (
-        <div className="Certs">
-            {/* {certs.map(x => (
+        <>
+            <div className="Certs">
+                {/* {certs.map(x => (
                 <CertCard x={x} key={x.name} />
             ))} */}
-            <FontAwesomeIcon className="left" size="3x" icon={faChevronLeft} onClick={handleLeft} />
-            <div className="carousel">
-                {certs.map((x, i) => (
-                    <div className={i === main ? "slide active" : "slide"} key={i}>
-                        {i === main && <img src={x.img} alt={x.name} />}
+                <FontAwesomeIcon
+                    className="left"
+                    size="3x"
+                    icon={faChevronLeft}
+                    onClick={handleLeft}
+                />
+                <div className="carousel">
+                    {certs.map((x, i) => (
+                        <div className={i === main ? "slide active" : "slide"} key={i}>
+                            {i === main && <img src={x.img} alt={x.name} />}
+                        </div>
+                    ))}
+                    <div className="under">
+                        <img src={certs[under].img} alt={certs[under].name} />
                     </div>
-                ))}
-                <div className="under">
-                    <img src={certs[under].img} alt={certs[under].name} />
                 </div>
+                <FontAwesomeIcon
+                    className="right"
+                    size="3x"
+                    icon={faChevronRight}
+                    onClick={handleRight}
+                />
             </div>
-            <FontAwesomeIcon
-                className="right"
-                size="3x"
-                icon={faChevronRight}
-                onClick={handleRight}
-            />
-        </div>
+            <div className="thumbnail">
+                {certs.map((x, i) => (
+                    <img
+                        src={x.img}
+                        className={i === main ? "active" : ""}
+                        onClick={() => {
+                            setUnder(main);
+                            setMain(i);
+                        }}
+                    />
+                ))}
+            </div>
+        </>
     );
 };
 

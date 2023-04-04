@@ -1,21 +1,20 @@
 .Certs { 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    position: relative;   
+    height: 800px;
     .carousel {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 92vh;
         img {
-            width: 1080px;
-            height: 800px;   
-            border-radius: 15px; 
+            width: 1060px;
+            height: 770px;   
+            border-radius: 10px; 
         }
-        .slide{  
-            position: absolute;  
-            top: 0; 
+        .slide{    
             transition: 1.5s ease; 
             opacity: 0;
         }
@@ -32,6 +31,7 @@
             top: 0; 
         }
     }
+    
     svg{
         color: gray; 
         &:hover{
@@ -49,3 +49,120 @@
         top: 45%;
     }
 } 
+.thumbnail {  
+    // position: absolute;
+    // top: 90%;
+    width: 100%;   
+    img{ 
+        transition: 0.5s ease; 
+        opacity: 0.5; 
+        border-radius: 5px;
+        width: 120px;
+        height: 90px;
+        margin: 0 5px ;
+        &:hover  {
+            box-shadow: 0 0 5px 5px #ffffff44;
+            opacity: 1;
+        } 
+        &.active  {
+            box-shadow: 0 0 5px 5px #ffffff44;
+            opacity: 1;
+        } 
+        
+    }
+}
+@media screen and (max-width:1600px) {
+    .Certs{
+        height: 700px;
+        .carousel{
+            img{
+                width: 900px;
+                height: 666px;  
+            } 
+        }
+        .left {
+            position: absolute;
+            left: 10%;
+            top: 35%;
+        }
+        .right {
+            position: absolute;
+            right: 10%;
+            top: 35%;
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .Certs{
+        height: 550px;
+        .carousel{
+            img{
+                width: 700px;
+                height: 517px;  
+            } 
+        }
+        .left {
+            position: absolute;
+            left: 4%;
+            top: 25%;
+        }
+        .right {
+            position: absolute;
+            right: 4%;
+            top: 25%;
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .Certs{
+        height: 400px;
+        .carousel{
+            img{
+                width: 500px;
+                height: 369px;  
+            } 
+        }
+        .left {
+            position: absolute;
+            left: 3%;
+            top: 15%;
+        }
+        .right {
+            position: absolute;
+            right: 3%;
+            top: 15%;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .Certs{
+        height: 320px;
+        .carousel{
+            img{
+                width: 400px;
+                height: 295px;  
+            } 
+        }
+        .left {
+            position: absolute;
+            left: 3%;
+            top: 12%;
+        }
+        .right {
+            position: absolute;
+            right: 3%;
+            top: 12%;
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .Certs{
+        height: 300px;
+        .carousel{
+            img{
+                width: 350px;
+                height: 258px;  
+            }
+        }
+    }
+}

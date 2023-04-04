@@ -82,15 +82,15 @@ const CVContextProvider = ({ children }) => {
 
     const certs = [
         { name: "CS50x Certificate", img: cs50x, org: "Harvard" },
-        { name: "CS50P Certificate", img: cs50p, org: "Harvard" },
         { name: "React", img: cReact, org: "Clarusway" },
+        { name: "CS50P Certificate", img: cs50p, org: "Harvard" },
         { name: "Frontend Developer", img: cFrontend, org: "Clarusway" },
-        { name: "JavaScript", img: cJS, org: "Clarusway" },
-        { name: "HTMLCSS", img: cHtmlCss, org: "Clarusway" },
-        { name: "JavaScript Algorithms & Data Structures", img: fCCJS, org: "freeCodeCamp" },
-        { name: "React (Basic)", img: hrReact, org: "HackerRank" },
         { name: "JavaScript (Intermediate)", img: hrJS2, org: "HackerRank" },
+        { name: "JavaScript", img: cJS, org: "Clarusway" },
+        { name: "React (Basic)", img: hrReact, org: "HackerRank" },
+        { name: "HTMLCSS", img: cHtmlCss, org: "Clarusway" },
         { name: "JavaScript (Basic)", img: hrJS, org: "HackerRank" },
+        { name: "JavaScript Algorithms & Data Structures", img: fCCJS, org: "freeCodeCamp" },
         { name: "Python (Basic)", img: hrPython, org: "HackerRank" },
     ];
 
