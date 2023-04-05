@@ -1,10 +1,22 @@
+import { useState } from "react";
 import "./ProjectCard.scss";
 
 const ProjectCard = ({ x }) => {
+    const [source, setSource] = useState(x.img);
     return (
-        <div className="ProjectCard">
+        <div
+            className="ProjectCard"
+            onMouseOver={() => setSource(x.gif)}
+            onMouseLeave={() => setSource(x.img)}
+        >
             <h1>{x.title}</h1>
             <p>{x.desc}</p>
+            <img src={source} alt={x.title} />
+            <div className="tools">
+                {x.tools.map((tool, i) => (
+                    <p key={i}>{tool}</p>
+                ))}
+            </div>
         </div>
     );
 };
