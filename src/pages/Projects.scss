@@ -1,6 +1,24 @@
 .Portfolio{ 
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10rem;  
-    gap: 1rem;
+    gap: 1rem; 
 }
+
+@media screen and (max-width:1750px) {
+    .Portfolio{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:1200px) {
+    .Portfolio{
+        grid-template-columns: 1fr;
+    }
+}
+// @media screen and (max-width:600px) {
+//     .Portfolio{
+//         justify-content: center;
+//         margin-left: 5rem;
+//     }
+// }

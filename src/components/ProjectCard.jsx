@@ -10,8 +10,8 @@ const ProjectCard = ({ x }) => {
             onMouseLeave={() => setSource(x.img)}
         >
             <h1>{x.title}</h1>
-            <p>{x.desc}</p>
             <img src={source} alt={x.title} />
+            <p>{x.desc}</p>
             <div className="tools">
                 {x.tools.map((tool, i) => (
                     <p key={i}>{tool}</p>

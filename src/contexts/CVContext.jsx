@@ -22,9 +22,15 @@ import hrReact from "../helpers/certs/HRReact.png";
 import rpgPNG from "../helpers/thumbs/CS50-Final-Project-2022.png";
 import ytzPNG from "../helpers/thumbs/YahtzeeInPython.png";
 import p151PNG from "../helpers/thumbs/Pokedex-151.png";
+import blogPNG from "../helpers/thumbs/React-Blog-App.png";
+import moviePNG from "../helpers/thumbs/React-Movie-App.png";
+import recipePNG from "../helpers/thumbs/Recipe-App.png";
 import rpgGIF from "../helpers/gifs/CS50-Final-Project-2022.gif";
 import ytzGIF from "../helpers/gifs/YahtzeeInPython.gif";
 import p151GIF from "../helpers/gifs/Pokedex-151.gif";
+import blogGIF from "../helpers/gifs/React-Blog-App.gif";
+import movieGIF from "../helpers/gifs/React-Movie-App.gif";
+import recipeGIF from "../helpers/gifs/Recipe-App.gif";
 
 export const CVContext = createContext();
 
@@ -56,27 +62,35 @@ const CVContextProvider = ({ children }) => {
         },
         {
             title: "React Movie App",
-            img: "",
-            gif: "",
+            img: moviePNG,
+            gif: movieGIF,
             desc: "In this project, the aim was to display cinema posters by using the TMDB API. There is a search feature for keywords. Upon logging in, movie synopsis, trailer and rating are available.",
             url: "https://movie-app-c836e.web.app/",
             tools: ["React", "Bootstrap", "Axios", "Firebase"],
         },
         {
             title: "React Recipe App",
-            img: "",
-            gif: "",
+            img: recipePNG,
+            gif: recipeGIF,
             desc: "A recipe app made using React and the Edamam API. You can search for recipes based on ingredients and by the type of meal. Clicking on specific recipes will reveal more details, such as allergens, ingredients, yield, calories, measurements and its region.",
             url: "https://recipe-app-ahua.vercel.app/",
             tools: ["React", "Edamam API"],
         },
         {
             title: "React Blog App",
-            img: "",
-            gif: "",
+            img: blogPNG,
+            gif: blogGIF,
             desc: "Utilizes Firebase Authentication, Cloud Firestore on the back-end, MUI, react-toastify on the frontend. Users can post images and text which are then retrieved and displayed as cards. They have the ability to edit, like or delete their own, and to like those of others.",
             url: "https://fireblog-ahua.web.app/",
             tools: ["React", "Firebase", "Firestore", "Material UI", "Toastify"],
+        },
+        {
+            title: "True North Martial Arts",
+            img: "",
+            gif: "",
+            desc: "A dummy martial arts website frontend, created as practice.",
+            url: "https://true-north-ahua.vercel.app/",
+            tools: ["React"],
         },
     ];
 
