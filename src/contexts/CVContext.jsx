@@ -21,8 +21,10 @@ import hrPython from "../helpers/certs/HRPython.png";
 import hrReact from "../helpers/certs/HRReact.png";
 import rpgPNG from "../helpers/thumbs/CS50-Final-Project-2022.png";
 import ytzPNG from "../helpers/thumbs/YahtzeeInPython.png";
+import p151PNG from "../helpers/thumbs/Pokedex-151.png";
 import rpgGIF from "../helpers/gifs/CS50-Final-Project-2022.gif";
 import ytzGIF from "../helpers/gifs/YahtzeeInPython.gif";
+import p151GIF from "../helpers/gifs/Pokedex-151.gif";
 
 export const CVContext = createContext();
 
@@ -30,8 +32,8 @@ const CVContextProvider = ({ children }) => {
     const projects = [
         {
             title: "Gen 1 Pokedex",
-            img: "",
-            gif: "",
+            img: p151PNG,
+            gif: p151GIF,
             desc: "Gen 1 Pokedex for the original 151, created with React. May expand to include other generations in the future. ",
             url: "https://pokedex-151-ahua.vercel.app/",
             tools: ["React", "SCSS", "PokeAPI"],
