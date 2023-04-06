@@ -25,12 +25,14 @@ import p151PNG from "../helpers/thumbs/Pokedex-151.png";
 import blogPNG from "../helpers/thumbs/React-Blog-App.png";
 import moviePNG from "../helpers/thumbs/React-Movie-App.png";
 import recipePNG from "../helpers/thumbs/Recipe-App.png";
+import tnmaPNG from "../helpers/thumbs/True-North-Martial-Arts.png";
 import rpgGIF from "../helpers/gifs/CS50-Final-Project-2022.gif";
 import ytzGIF from "../helpers/gifs/YahtzeeInPython.gif";
 import p151GIF from "../helpers/gifs/Pokedex-151.gif";
 import blogGIF from "../helpers/gifs/React-Blog-App.gif";
 import movieGIF from "../helpers/gifs/React-Movie-App.gif";
 import recipeGIF from "../helpers/gifs/Recipe-App.gif";
+import tnmaGIF from "../helpers/gifs/True-North-Martial-Arts.gif";
 
 export const CVContext = createContext();
 
@@ -43,6 +45,14 @@ const CVContextProvider = ({ children }) => {
             desc: "Gen 1 Pokedex for the original 151, created with React. May expand to include other generations in the future. ",
             url: "https://pokedex-151-ahua.vercel.app/",
             tools: ["React", "SCSS", "PokeAPI"],
+        },
+        {
+            title: "React Blog App",
+            img: blogPNG,
+            gif: blogGIF,
+            desc: "Utilizes Firebase Authentication, Cloud Firestore on the back-end, MUI, react-toastify on the frontend. Users can post images and text which are then retrieved and displayed as cards. They have the ability to edit, like or delete their own, and to like those of others.",
+            url: "https://fireblog-ahua.web.app/",
+            tools: ["React", "Firebase", "Firestore", "Material UI", "Toastify"],
         },
         {
             title: "RPG Where Everyone Is Useless",
@@ -76,18 +86,11 @@ const CVContextProvider = ({ children }) => {
             url: "https://recipe-app-ahua.vercel.app/",
             tools: ["React", "Edamam API"],
         },
-        {
-            title: "React Blog App",
-            img: blogPNG,
-            gif: blogGIF,
-            desc: "Utilizes Firebase Authentication, Cloud Firestore on the back-end, MUI, react-toastify on the frontend. Users can post images and text which are then retrieved and displayed as cards. They have the ability to edit, like or delete their own, and to like those of others.",
-            url: "https://fireblog-ahua.web.app/",
-            tools: ["React", "Firebase", "Firestore", "Material UI", "Toastify"],
-        },
+
         {
             title: "True North Martial Arts",
-            img: "",
-            gif: "",
+            img: tnmaPNG,
+            gif: tnmaGIF,
             desc: "A dummy martial arts website frontend, created as practice.",
             url: "https://true-north-ahua.vercel.app/",
             tools: ["React"],
