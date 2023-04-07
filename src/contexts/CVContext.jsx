@@ -44,22 +44,25 @@ const CVContextProvider = ({ children }) => {
             gif: p151GIF,
             desc: "Generation One Pokedex for the original 151, created with React and the PokeAPI. Styled with Pure SCSS. May expand to include other generations in the future.",
             url: "https://pokedex-151-ahua.vercel.app/",
+            github: "https://github.com/ahua1994/pokedex-app",
             tools: ["React", "SCSS", "PokeAPI"],
         },
         {
             title: "React Blog App",
             img: blogPNG,
             gif: blogGIF,
-            desc: "Utilizes Firebase Authentication, Cloud Firestore on the back-end, MUI, react-toastify on the frontend. Users can post images and text which are then retrieved and displayed as cards. They have the ability to edit, like or delete their own, and to like those of others. There is a v2 that utilizes my own backend created with Django, available with comment CRUD operations.",
+            desc: "Users can post images and text which are then retrieved and displayed as cards. They have the ability to edit, like or delete their own, and to like those of others. There is a v2 that utilizes my own backend created with Django, available with comment CRUD operations.",
             url: "https://fireblog-ahua.web.app/",
+            github: "https://github.com/ahua1994/blog-app-ahua",
             tools: ["React", "Firebase", "Firestore", "Material UI", "Toastify", "Django"],
         },
         {
             title: "RPG Where Everyone Is Useless",
             img: rpgPNG,
             gif: rpgGIF,
-            desc: "An RPG game made using Lua and LÖVE2d. Assets used were all open-source. Learned the basics of 2D game development from scratch. Implemented elements of NPC speech, triggered events, character animation, movement and collision, enemies, death, respawn, dialogue, map creation, boss fight, sound effects and BGM.",
+            desc: "An RPG game made using Lua and LÖVE2d. Assets used were all open-source. Implemented basic elements of NPC speech, triggered events, character animation, movement and collision, enemies, death, respawn, dialogue, map creation, boss fight, sound effects and BGM.",
             url: "https://www.youtube.com/watch?v=zjV3ulOi0oI",
+            github: "https://github.com/ahua1994/CS50X-Final-Project---Andy-Hua",
             tools: ["Lua", "LÖVE2d"],
         },
         {
@@ -68,6 +71,7 @@ const CVContextProvider = ({ children }) => {
             gif: ytzGIF,
             desc: "A single player, command-line version of Yahtzee I wrote in Python.",
             url: "https://www.youtube.com/watch?v=sKuwJnGtdt0&feature=youtu.be",
+            github: "https://github.com/ahua1994/Yahtzee-Python",
             tools: ["Python"],
         },
         {
@@ -76,6 +80,7 @@ const CVContextProvider = ({ children }) => {
             gif: movieGIF,
             desc: "In this project, the aim was to display cinema posters by using the TMDB API. There is a search feature for keywords. Upon logging in, movie synopsis, trailer and rating are available.",
             url: "https://movie-app-c836e.web.app/",
+            github: "https://github.com/ahua1994/react-movie-app",
             tools: ["React", "Bootstrap", "Axios", "Firebase"],
         },
         {
@@ -84,6 +89,7 @@ const CVContextProvider = ({ children }) => {
             gif: recipeGIF,
             desc: "A recipe app made using React and the Edamam API. You can search for recipes based on ingredients and by the type of meal. Clicking on specific recipes will reveal more details, such as allergens, ingredients, yield, calories, measurements and its region.",
             url: "https://recipe-app-ahua.vercel.app/",
+            github: "https://github.com/ahua1994/recipe-app",
             tools: ["React", "Edamam API"],
         },
 
@@ -91,8 +97,9 @@ const CVContextProvider = ({ children }) => {
             title: "True North Martial Arts",
             img: tnmaPNG,
             gif: tnmaGIF,
-            desc: "A dummy martial arts website frontend, created as practice.",
+            desc: "A Martial Arts dummy webpage I made featuring three disciplines; Shaolin Kung Fu, Muay Thai, and Taichi.",
             url: "https://true-north-ahua.vercel.app/",
+            github: "https://github.com/ahua1994/true-north-ahua",
             tools: ["React"],
         },
     ];

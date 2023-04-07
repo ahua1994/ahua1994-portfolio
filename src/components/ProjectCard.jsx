@@ -1,5 +1,8 @@
+import { faLink, faCodeFork } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./ProjectCard.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ x }) => {
     const [source, setSource] = useState(x.img);
@@ -11,13 +14,26 @@ const ProjectCard = ({ x }) => {
         >
             <div className="main">
                 <h2>{x.title}</h2>
-                <img src={source} alt={x.title} />
+                <Link to={x.url}>
+                    <img src={source} alt={x.title} title="Link To Project" />
+                </Link>
                 <p className="desc">{x.desc}</p>
             </div>
-            <div className="tools">
-                {x.tools.map((tool, i) => (
-                    <p key={i}>{tool}</p>
-                ))}
+            <div className="foot">
+                <div className="tools">
+                    {/* {x.tools.map((tool, i) => (
+                        <p key={i}>{tool}</p>
+                    ))} */}
+                    {x.tools.join(" | ")}
+                </div>
+                <div className="links">
+                    <Link to={x.github} title="Link To Repo">
+                        <FontAwesomeIcon icon={faCodeFork} size="2x"></FontAwesomeIcon>
+                    </Link>
+                    <Link to={x.url} title="Link To Project">
+                        <FontAwesomeIcon icon={faLink} size="2x"></FontAwesomeIcon>
+                    </Link>
+                </div>
             </div>
         </div>
     );
