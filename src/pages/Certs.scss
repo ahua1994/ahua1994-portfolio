@@ -56,6 +56,7 @@
 .thumbnails {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     // position: absolute;
     // top: 90%;
     width: 100%;

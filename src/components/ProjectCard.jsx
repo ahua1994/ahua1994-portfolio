@@ -9,9 +9,11 @@ const ProjectCard = ({ x }) => {
             onMouseOver={() => setSource(x.gif)}
             onMouseLeave={() => setSource(x.img)}
         >
-            <h1>{x.title}</h1>
-            <img src={source} alt={x.title} />
-            <p>{x.desc}</p>
+            <div className="main">
+                <h2>{x.title}</h2>
+                <img src={source} alt={x.title} />
+                <p className="desc">{x.desc}</p>
+            </div>
             <div className="tools">
                 {x.tools.map((tool, i) => (
                     <p key={i}>{tool}</p>
