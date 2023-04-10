@@ -1,6 +1,6 @@
+import "./Projects.scss";
 import { useContext } from "react";
 import { CVContext } from "../contexts/CVContext";
-import "./Projects.scss";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {

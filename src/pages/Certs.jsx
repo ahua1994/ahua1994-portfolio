@@ -52,6 +52,7 @@ const Certs = () => {
                         <p>{x.org + " " + x.name}</p>
                         <img
                             src={x.img}
+                            alt={x.name}
                             className={i === main ? "active" : ""}
                             onClick={() => {
                                 setUnder(main);

@@ -1,13 +1,17 @@
-import { faLink, faCodeFork } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./ProjectCard.scss";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ x }) => {
     const [source, setSource] = useState(x.img);
     return (
         <div
+            data-aos="fade-down"
+            data-aos-offset="500"
+            data-aos-duration="500"
             className="ProjectCard"
             onMouseOver={() => setSource(x.gif)}
             onMouseLeave={() => setSource(x.img)}
@@ -28,7 +32,7 @@ const ProjectCard = ({ x }) => {
                 </div>
                 <div className="links">
                     <Link to={x.github} title="Link To Repo">
-                        <FontAwesomeIcon icon={faCodeFork} size="2x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faGithub} size="2x" />
                     </Link>
                     <Link to={x.url} title="Link To Project">
                         <FontAwesomeIcon icon={faLink} size="2x"></FontAwesomeIcon>
