@@ -22,7 +22,7 @@ const Certs = () => {
 
     return (
         <>
-            <div className="Certs">
+            <div className="Certs" data-aos="flip-right" data-aos-duration="1200">
                 <FontAwesomeIcon
                     className="left"
                     size="3x"
@@ -46,9 +46,20 @@ const Certs = () => {
                     onClick={handleRight}
                 />
             </div>
-            <div className="thumbnails">
+            <div
+                className="thumbnails"
+                data-aos="fade-right"
+                data-aos-offset="-1000"
+                data-aos-duration="1200"
+            >
                 {certs.map((x, i) => (
-                    <div className="thumbnail">
+                    <div
+                        className="thumbnail"
+                        data-aos="flip-up"
+                        data-aos-offset="-1000"
+                        data-aos-duration="1200"
+                        data-aos-delay={String(i * 150)}
+                    >
                         <p>{x.org + " " + x.name}</p>
                         <img
                             src={x.img}

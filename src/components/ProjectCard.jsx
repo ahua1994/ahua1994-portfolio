@@ -10,8 +10,7 @@ const ProjectCard = ({ x }) => {
     return (
         <div
             data-aos="fade-down"
-            data-aos-offset="500"
-            data-aos-duration="500"
+            data-aos-duration="1200"
             className="ProjectCard"
             onMouseOver={() => setSource(x.gif)}
             onMouseLeave={() => setSource(x.img)}

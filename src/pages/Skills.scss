@@ -1,6 +1,35 @@
 .Skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    gap: 1rem;
-    margin: 4rem 0;
+    display: flex; 
+    position: relative;
+    .skillbar{ 
+        display: flex;
+        position: absolute;
+        // justify-content: space-evenly;
+        overflow-x: hidden;
+        width: 100%;
+        .skillrow{
+            display: flex;
+            animation: scroll 20s linear infinite backwards; 
+
+            .skillbadge{ 
+                margin-right: 3rem;
+                img {
+                    width: 100px; 
+                } 
+            }
+        }  
+    }
 }
+
+@keyframes scroll {
+    0% {
+        transform: translate(-100%);
+      }
+    
+      100% {
+        transform: translate(0%);
+      }
+}
+
+
+
