@@ -9,6 +9,33 @@ body {
   padding: 0; 
   overflow-x: hidden;
 } 
+html{
+  background-color: black;
+}
+* { 
+  scrollbar-color: orange black; 
+ }
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 13px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: orange; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8533; 
+}
 @font-face {
   font-family: Azonix;
   src: url("./helpers/fonts/Azonix-1VB0.otf");

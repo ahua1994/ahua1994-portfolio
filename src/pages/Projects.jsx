@@ -8,7 +8,7 @@ const Projects = () => {
     const [alpha, setAlpha] = useState(0);
     const [src, setSrc] = useState("");
     const [scale, setScale] = useState(10);
-    console.log(alpha);
+
     return (
         <div className="Portfolio">
             <div className="cover" style={{ backgroundColor: `rgba(0,0,0,${alpha})` }}>
