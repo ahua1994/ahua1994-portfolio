@@ -4,6 +4,27 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10rem;  
     gap: 2rem;  
+    position: relative; 
+    .cover{
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+        z-index: 1000;
+        width: 100vw;
+        height: 101%;
+        user-select: none;
+        pointer-events: none; 
+        transition: 0.5s;
+        img{
+            position: relative;  
+            height: 80vh;
+            width: 80vw; 
+            top: 10%; 
+            transition:  0.5s;
+            transform: scale(10%);
+        }
+    } 
 }
 
 @media screen and (max-width:1750px) {

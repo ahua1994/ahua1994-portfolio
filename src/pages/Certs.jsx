@@ -59,6 +59,7 @@ const Certs = () => {
                         data-aos-offset="-1000"
                         data-aos-duration="1200"
                         data-aos-delay={String(i * 150)}
+                        key={i}
                     >
                         <p>{x.org + " " + x.name}</p>
                         <img

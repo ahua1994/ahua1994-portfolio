@@ -7,6 +7,7 @@ import pg from "../helpers/images/pg.png";
 import html from "../helpers/images/html.png";
 import css from "../helpers/images/css.png";
 import django from "../helpers/images/django.png";
+import flask from "../helpers/images/flask.png";
 import git from "../helpers/images/git.png";
 import cFrontend from "../helpers/certs/ClaruswayFE.png";
 import cHtmlCss from "../helpers/certs/ClaruswayHTMLCSS.png";
@@ -110,6 +111,7 @@ const CVContextProvider = ({ children }) => {
         { name: "TypeScript", img: ts },
         { name: "Python", img: python },
         { name: "Django", img: django },
+        { name: "Flask", img: flask },
         { name: "PostgreSQL", img: pg },
         { name: "Git", img: git },
         { name: "HTML", img: html },

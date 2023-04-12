@@ -15,7 +15,7 @@ const Skills = () => {
                             data-aos="flip-right"
                             data-aos-duration="1000"
                         >
-                            <h1>{x.name}</h1>
+                            <h3>{x.name}</h3>
                             <img src={x.img} alt={x.name} />
                         </div>
                     ))}
@@ -28,7 +28,7 @@ const Skills = () => {
                             data-aos="flip-right"
                             data-aos-duration="1000"
                         >
-                            <h1>{x.name}</h1>
+                            <h3>{x.name}</h3>
                             <img src={x.img} alt={x.name} />
                         </div>
                     ))}
@@ -41,7 +41,7 @@ const Skills = () => {
                             data-aos="flip-right"
                             data-aos-duration="1000"
                         >
-                            <h1>{x.name}</h1>
+                            <h3>{x.name}</h3>
                             <img src={x.img} alt={x.name} />
                         </div>
                     ))}

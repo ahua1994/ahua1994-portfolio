@@ -5,7 +5,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ProjectCard = ({ x }) => {
+const ProjectCard = ({ x, setAlpha, setScale, setSrc }) => {
     const [source, setSource] = useState(x.img);
     return (
         <div
@@ -17,18 +17,25 @@ const ProjectCard = ({ x }) => {
         >
             <div className="main">
                 <h2>{x.title}</h2>
-                <Link to={x.url}>
-                    <img src={source} alt={x.title} title="Link To Project" />
-                </Link>
+                <img
+                    className="card-img"
+                    src={source}
+                    alt={x.title}
+                    title="Click To Enlarge"
+                    onClick={() => {
+                        setSrc(x.gif);
+                        setScale(100);
+                        setAlpha(0.9);
+                    }}
+                    onMouseLeave={() => {
+                        setAlpha(0);
+                        setScale(10);
+                    }}
+                />
                 <p className="desc">{x.desc}</p>
             </div>
             <div className="foot">
-                <div className="tools">
-                    {/* {x.tools.map((tool, i) => (
-                        <p key={i}>{tool}</p>
-                    ))} */}
-                    {x.tools.join(" | ")}
-                </div>
+                <div className="tools">{x.tools.join(" | ")}</div>
                 <div className="links">
                     <Link to={x.github} title="Link To Repo">
                         <FontAwesomeIcon icon={faGithub} size="2x" />
