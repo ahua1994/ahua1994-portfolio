@@ -22,7 +22,7 @@ const Certs = () => {
 
     return (
         <>
-            <div className="Certs" data-aos="flip-right" data-aos-duration="1200">
+            <div className="Certs" data-aos="flip-up" data-aos-duration="1200">
                 <FontAwesomeIcon
                     className="left"
                     size="3x"

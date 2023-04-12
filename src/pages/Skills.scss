@@ -9,12 +9,25 @@
         width: 100%;
         .skillrow{
             display: flex;
-            animation: scroll 20s linear infinite backwards; 
-
+            animation: scroll 40s linear infinite backwards; 
             .skillbadge{ 
-                margin-right: 3rem;
+                margin-right: 3rem;  
+                text-align: center;
+                width: 150px;
+                font-family: Merula;
+                h1{ 
+                    font-weight: lighter;
+                    opacity: 0;
+                    transform: translateY(30px); 
+                    transition:  0.5s ease;
+                }
+                &:hover h1{
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition: 0.5s ease; 
+                }
                 img {
-                    width: 100px; 
+                    width: 75px; 
                 } 
             }
         }  
@@ -29,7 +42,6 @@
       100% {
         transform: translate(0%);
       }
-}
-
+} 
 
 
