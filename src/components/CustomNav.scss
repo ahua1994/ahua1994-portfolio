@@ -12,13 +12,56 @@
     }
     .links {
         display: flex; 
+        flex-wrap: wrap;
+        margin:0;
+        list-style: none; 
         .nav-btn {
             margin: 1rem 1rem 1rem 0;
-            cursor: pointer;
+            cursor: pointer; 
+            
             // transition: 0.5s;
             // &:hover{
             //     border-bottom: 3px solid red;
             // }
+        }
+    }
+    .burger{
+        display: none;
+        margin: 1rem 1rem 1rem 0;
+        cursor: pointer; 
+        .drop{   
+            transition: transform 1s ease-in-out;
+        }  
+    }
+} 
+
+@media screen and (max-width:1200px) {
+    .CustomNav{ 
+        .logo{
+            height: 3rem;
+        }
+        .links{
+            display: block;
+            .nav-btn{
+                display: none; 
+            } 
+        }
+        .burger{
+            display: flex;  
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            .drop {
+                position: absolute;   
+                z-index: 1001;
+                background-color: black;
+                border-radius: 5px;
+                border: 1px solid gold;
+                .nav-btn{
+                    padding: 6px;
+                    border: 1px solid gold;
+                }
+            }
         }
     }
 }

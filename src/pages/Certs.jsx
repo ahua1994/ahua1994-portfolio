@@ -49,14 +49,14 @@ const Certs = () => {
             <div
                 className="thumbnails"
                 data-aos="fade-right"
-                data-aos-offset="-1000"
-                data-aos-duration="1200"
+                data-aos-offset="0"
+                data-aos-duration="2200"
             >
                 {certs.map((x, i) => (
                     <div
                         className="thumbnail"
                         data-aos="flip-up"
-                        data-aos-offset="-1000"
+                        data-aos-offset="0"
                         data-aos-duration="1200"
                         data-aos-delay={String(i * 150)}
                         key={i}

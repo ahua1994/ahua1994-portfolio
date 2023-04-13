@@ -10,24 +10,26 @@ const Projects = () => {
     const [scale, setScale] = useState(10);
 
     return (
-        <div className="Portfolio">
-            <div className="cover" style={{ backgroundColor: `rgba(0,0,0,${alpha})` }}>
-                <img
-                    src={src}
-                    alt={src}
-                    style={{ transform: `scale(${scale}%)`, opacity: alpha === 0 ? 0 : 1 }}
-                />
+        <>
+            <div className="Portfolio">
+                <div className="cover" style={{ backgroundColor: `rgba(0,0,0,${alpha})` }}>
+                    <img
+                        src={src}
+                        alt={src}
+                        style={{ transform: `scale(${scale}%)`, opacity: alpha === 0 ? 0 : 1 }}
+                    />
+                </div>
+                {projects.map(x => (
+                    <ProjectCard
+                        x={x}
+                        setSrc={setSrc}
+                        setScale={setScale}
+                        setAlpha={setAlpha}
+                        key={x.title}
+                    />
+                ))}
             </div>
-            {projects.map(x => (
-                <ProjectCard
-                    x={x}
-                    setSrc={setSrc}
-                    setScale={setScale}
-                    setAlpha={setAlpha}
-                    key={x.title}
-                />
-            ))}
-        </div>
+        </>
     );
 };
 

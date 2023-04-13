@@ -37,10 +37,20 @@ const ProjectCard = ({ x, setAlpha, setScale, setSrc }) => {
             <div className="foot">
                 <div className="tools">{x.tools.join(" | ")}</div>
                 <div className="links">
-                    <Link to={x.github} title="Link To Repo">
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to={x.github}
+                        title="Link To Repo"
+                    >
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </Link>
-                    <Link to={x.url} title="Link To Project">
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to={x.url}
+                        title="Link To Project"
+                    >
                         <FontAwesomeIcon icon={faLink} size="2x"></FontAwesomeIcon>
                     </Link>
                 </div>
