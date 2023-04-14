@@ -14,15 +14,16 @@ const CustomNav = () => {
                 Andy Hua
             </div>
             <ul className="links">
+                <li className="nav-btn" onClick={() => navigate("/")}>
+                    Home
+                </li>
                 <li className="nav-btn" onClick={() => navigate("/projects")}>
                     Projects
                 </li>
                 <li className="nav-btn" onClick={() => navigate("/certifications")}>
                     Certs
                 </li>
-                <li className="nav-btn" onClick={() => navigate("/skills")}>
-                    Skills
-                </li>
+
                 <li className="nav-btn" onClick={() => navigate("/resume")}>
                     Resume
                 </li>
@@ -37,15 +38,16 @@ const CustomNav = () => {
                     className="drop"
                     style={{ transform: expand ? "translate(0%,50px)" : "translate(120%,50px)" }}
                 >
+                    <div className="nav-btn" onClick={() => navigate("/")}>
+                        Home
+                    </div>
                     <div className="nav-btn" onClick={() => navigate("/projects")}>
                         Projects
                     </div>
                     <div className="nav-btn" onClick={() => navigate("/certifications")}>
                         Certs
                     </div>
-                    <div className="nav-btn" onClick={() => navigate("/skills")}>
-                        Skills
-                    </div>
+
                     <div className="nav-btn" onClick={() => navigate("/resume")}>
                         Resume
                     </div>

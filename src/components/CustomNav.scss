@@ -9,7 +9,7 @@
         color: orange;
         margin: 1rem;
         cursor: pointer;
-        transition: 0.8s;
+        transition: 1s;
         &:hover{  
             color: white;
             filter: drop-shadow(0px 0px 3px crimson);
@@ -38,7 +38,7 @@
         .drop{   
             transition: transform 1s ease-in-out;
             .nav-btn{
-                transition: 0.8s;
+                transition: 1s;
                 &:hover{
                     color: white; 
                     filter: drop-shadow(0px 0px 3px crimson);

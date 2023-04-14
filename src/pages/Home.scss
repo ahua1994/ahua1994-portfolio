@@ -1,6 +1,48 @@
-.Home {
-    h1{
+.Home {    
+    color:gold;
+    margin-bottom: 2rem;
+    h1,h2{
         font-size: 2rem;
     }
-    margin-bottom: 2rem;
+    .intro, .home-certs,.home-projects{
+        height:900px;
+        font-family: InterBureauTitle;
+        h1{
+            font-size: 4.5rem;
+        }
+        p{
+            font-size: 2rem;
+            cursor: pointer;  
+        }
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-direction: column;
+    }
+
+    .light{
+        background: #111;
+        color: white;
+    }
+    .home-projects{
+        display: flex; 
+        justify-content: center; 
+        img{ 
+            transform: scale(70%);
+            border-radius: 50px;
+        }
+    } 
+    .home-certs{ 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        .thumbnails{
+            width: 799px;
+            p{
+                font-size: 1rem;
+                font-family: Roboto;
+            }
+        }
+    }
 }
