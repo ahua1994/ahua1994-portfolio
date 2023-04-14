@@ -5,26 +5,54 @@ import Skills from "./Skills";
 import "./Home.scss";
 import { useContext } from "react";
 import { CVContext } from "../contexts/CVContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
     const { projects, certs } = useContext(CVContext);
     const navigate = useNavigate();
     return (
         <div className="Home">
-            <h1>Still In Development, but feel free to browse around!</h1>
-            <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to={"https://www.codewars.com/users/ahua1994"}
-            >
-                <img
-                    src="https://www.codewars.com/users/ahua1994/badges/large"
-                    alt="CodeWars Badge"
-                />
-            </Link>
+            <Skills />
             <div className="intro">
-                <h1>My name is Andy Hua!</h1>
-                <h2>This Portfolio showcases some of my work.</h2>
+                <h1 data-aos="fade-in" data-aos-duration="3000">
+                    My name is{" "}
+                    <span data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000">
+                        Andy Hua!
+                    </span>
+                </h1>
+                <h2 data-aos="fade-down" data-aos-delay="500" data-aos-duration="2600">
+                    This Portfolio showcases some of my work.
+                </h2>
+                <div className="socials">
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to={"https://www.codewars.com/users/ahua1994"}
+                    >
+                        <img
+                            data-aos="flip-right"
+                            data-aos-duration="1600"
+                            data-aos-delay="400"
+                            style={{ marginTop: "3rem" }}
+                            src="https://www.codewars.com/users/ahua1994/badges/large"
+                            alt="Codewars Badge"
+                        />
+                    </Link>
+                    <Link to="https://www.linkedin.com/in/andy-hua-125431168/">
+                        <FontAwesomeIcon icon={faLinkedin} /> Andy Hua
+                    </Link>
+                    <Link to={"https://www.github.com/ahua1994"}>
+                        <FontAwesomeIcon icon={faGithub} /> ahua1994
+                    </Link>
+                    <Link to={"https://www.youtube.com/@ahua1994"}>
+                        <FontAwesomeIcon icon={faYoutube} /> @ahua1994
+                    </Link>
+                    <Link to={"mailto:user.andy.hua@gmail.com"}>
+                        <FontAwesomeIcon icon={faEnvelope} /> user.andy.hua@gmail.com
+                    </Link>
+                </div>
             </div>
             <div className="home-projects ">
                 <div className="text">
@@ -32,7 +60,10 @@ const Home = () => {
                         ahua1994 Projects
                     </h1>
                     <p
-                        onClick={() => navigate("/projects")}
+                        onClick={() => {
+                            window.scroll(0, 0);
+                            navigate("/projects");
+                        }}
                         data-aos="fade-right"
                         data-aos-duration="800"
                         data-aos-delay="300"
@@ -40,8 +71,11 @@ const Home = () => {
                         Go To Projects {">"}
                     </p>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1200" data-aos-delay="800">
+                <div className="preview">
                     <img
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                        data-aos-delay="800"
                         src={projects[2].gif}
                         alt={projects[2].title}
                         key={projects[2].title}
@@ -77,6 +111,7 @@ const Home = () => {
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="300"
+                    data-aos-offset="0"
                 >
                     Go To Certificates {">"}
                 </p>

@@ -5,7 +5,7 @@ import { CVContext } from "../contexts/CVContext";
 const Skills = () => {
     const { skills } = useContext(CVContext);
     return (
-        <div className="Skills" data-aos="fade-down" data-aos-duration="800">
+        <div className="Skills" data-aos="fade-down" data-aos-duration="1200">
             <div className="skillbar">
                 <div className="skillrow">
                     {skills.map(x => (
@@ -13,7 +13,7 @@ const Skills = () => {
                             className="skillbadge"
                             key={x.name}
                             data-aos="flip-right"
-                            data-aos-duration="1000"
+                            data-aos-duration="2000"
                         >
                             <h3>{x.name}</h3>
                             <img src={x.img} alt={x.name} />
