@@ -1,11 +1,10 @@
 .Skills {
     display: flex; 
     position: relative; 
-    color: white; 
-    .skillbar{ 
+    color: white;  
+    .skillbar{  
         display: flex;
-        position: absolute;
-        // justify-content: space-evenly;
+        position: absolute; 
         overflow: hidden;
         width: 100%;
         .skillrow{

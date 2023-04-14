@@ -1,13 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import Certs from "./Certs";
 import Skills from "./Skills";
 // import Projects from "./Projects";
 import "./Home.scss";
 import { useContext } from "react";
 import { CVContext } from "../contexts/CVContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Socials from "../components/Socials";
 
 const Home = () => {
     const { projects, certs } = useContext(CVContext);
@@ -15,17 +13,9 @@ const Home = () => {
     return (
         <div className="Home">
             <Skills />
+            <Socials />
             <div className="intro">
-                <h1 data-aos="fade-in" data-aos-duration="3000">
-                    My name is{" "}
-                    <span data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000">
-                        Andy Hua!
-                    </span>
-                </h1>
-                <h2 data-aos="fade-down" data-aos-delay="500" data-aos-duration="2600">
-                    This Portfolio showcases some of my work.
-                </h2>
-                <div className="socials">
+                {/* <div className="socials">
                     <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -41,18 +31,27 @@ const Home = () => {
                         />
                     </Link>
                     <Link to="https://www.linkedin.com/in/andy-hua-125431168/">
-                        <FontAwesomeIcon icon={faLinkedin} /> Andy Hua
+                        <FontAwesomeIcon icon={faLinkedin} />
                     </Link>
                     <Link to={"https://www.github.com/ahua1994"}>
-                        <FontAwesomeIcon icon={faGithub} /> ahua1994
+                        <FontAwesomeIcon icon={faGithub} />
                     </Link>
                     <Link to={"https://www.youtube.com/@ahua1994"}>
-                        <FontAwesomeIcon icon={faYoutube} /> @ahua1994
+                        <FontAwesomeIcon icon={faYoutube} />
                     </Link>
                     <Link to={"mailto:user.andy.hua@gmail.com"}>
-                        <FontAwesomeIcon icon={faEnvelope} /> user.andy.hua@gmail.com
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </Link>
-                </div>
+                </div> */}
+                <h1 data-aos="fade-in" data-aos-duration="3000">
+                    My name is{" "}
+                    <span data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000">
+                        Andy Hua!
+                    </span>
+                </h1>
+                <h2 data-aos="fade-down" data-aos-delay="500" data-aos-duration="2600">
+                    This Portfolio showcases some of my work.
+                </h2>
             </div>
             <div className="home-projects ">
                 <div className="text">
