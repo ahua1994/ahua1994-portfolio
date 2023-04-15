@@ -16,7 +16,15 @@ const Projects = () => {
                     <img
                         src={src}
                         alt={src}
-                        style={{ transform: `scale(${scale}%)`, opacity: alpha === 0 ? 0 : 1 }}
+                        style={{
+                            transform: `scale(${scale}%)`,
+                            opacity: alpha === 0 ? 0 : 1,
+                            pointerEvents: alpha === 0 ? "none" : "all",
+                        }}
+                        onMouseLeave={() => {
+                            setAlpha(0);
+                            setScale(10);
+                        }}
                     />
                 </div>
                 {projects.map(x => (

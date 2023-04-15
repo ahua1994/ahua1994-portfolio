@@ -27,10 +27,6 @@ const ProjectCard = ({ x, setAlpha, setScale, setSrc }) => {
                         setScale(100);
                         setAlpha(0.9);
                     }}
-                    onMouseLeave={() => {
-                        setAlpha(0);
-                        setScale(10);
-                    }}
                 />
                 <p className="desc">{x.desc}</p>
             </div>

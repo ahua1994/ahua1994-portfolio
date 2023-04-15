@@ -28,7 +28,7 @@ const CustomNav = () => {
                     Resume
                 </li>
             </ul>
-            <div className=" burger">
+            <div className="burger">
                 <FontAwesomeIcon
                     className="icon"
                     icon={faBars}

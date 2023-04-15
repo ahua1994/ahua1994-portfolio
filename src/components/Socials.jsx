@@ -11,30 +11,33 @@ const Socials = () => {
             data-aos="fade-right"
             data-aos-duration="1600"
             data-aos-delay="400"
+            data-aos-offset="0"
         >
-            <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                to="https://www.linkedin.com/in/andy-hua-125431168/"
-            >
-                <FontAwesomeIcon size="2x" icon={faLinkedin} />
-                <span> LinkedIn Andy Hua</span>
-            </Link>
+            <div style={{ display: "flex", flexDirection: "column", color: "gray" }}>
+                <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    to="https://www.linkedin.com/in/andy-hua-125431168/"
+                >
+                    <span> LinkedIn Andy Hua</span>
+                    <FontAwesomeIcon size="2x" icon={faLinkedin} style={{ color: "#0077b5" }} />
+                </Link>
+            </div>
             <Link target="_blank" rel="noopener noreferrer" to={"https://www.github.com/ahua1994"}>
-                <FontAwesomeIcon size="2x" icon={faGithub} />
                 <span> github ahua1994</span>
+                <FontAwesomeIcon size="2x" icon={faGithub} />
             </Link>
             <Link
                 target="_blank"
                 rel="noopener noreferrer"
                 to={"https://www.youtube.com/@ahua1994"}
             >
-                <FontAwesomeIcon size="2x" icon={faYoutube} />
                 <span> YT ahua1994</span>
+                <FontAwesomeIcon size="2x" icon={faYoutube} style={{ color: "#FF1A1A" }} />
             </Link>
             <Link target="_blank" rel="noopener noreferrer" to={"mailto:user.andy.hua@gmail.com"}>
-                <FontAwesomeIcon size="2x" icon={faEnvelope} />
                 <span> user.andy.hua@gmail.com</span>
+                <FontAwesomeIcon size="2x" icon={faEnvelope} style={{ color: "#FFBF00" }} />
             </Link>
             <Link
                 target="_blank"

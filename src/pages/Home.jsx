@@ -70,7 +70,7 @@ const Home = () => {
                         Go To Projects {">"}
                     </p>
                 </div>
-                <div className="preview">
+                <div className="preview" onClick={() => navigate("/projects")}>
                     <img
                         data-aos="fade-left"
                         data-aos-duration="1200"
@@ -98,6 +98,7 @@ const Home = () => {
                             data-aos-offset="0"
                             data-aos-duration="1200"
                             data-aos-delay={String(i * 150)}
+                            onClick={() => navigate("/certifications")}
                             key={i}
                         >
                             <p>{x.org + " " + x.name}</p>
