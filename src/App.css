@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 } 
 html{
-  background-color: black;
+  background-color: black !important; 
 }
 * { 
   scrollbar-color: orange black; 
