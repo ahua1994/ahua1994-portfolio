@@ -29,6 +29,9 @@
         white-space: nowrap;  
         display: block;
     } 
+    svg{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width:755px) {
@@ -36,6 +39,9 @@
         flex-wrap: nowrap;
         span{
            display: none;
+        }
+        svg{
+            margin:0;
         }
     }
 }

@@ -13,16 +13,14 @@ const Socials = () => {
             data-aos-delay="400"
             data-aos-offset="0"
         >
-            <div style={{ display: "flex", flexDirection: "column", color: "gray" }}>
-                <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    to="https://www.linkedin.com/in/andy-hua-125431168/"
-                >
-                    <span> LinkedIn Andy Hua</span>
-                    <FontAwesomeIcon size="2x" icon={faLinkedin} style={{ color: "#0077b5" }} />
-                </Link>
-            </div>
+            <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="https://www.linkedin.com/in/andy-hua-125431168/"
+            >
+                <span> LinkedIn Andy Hua</span>
+                <FontAwesomeIcon size="2x" icon={faLinkedin} style={{ color: "#0077b5" }} />
+            </Link>
             <Link target="_blank" rel="noopener noreferrer" to={"https://www.github.com/ahua1994"}>
                 <span> github ahua1994</span>
                 <FontAwesomeIcon size="2x" icon={faGithub} />
@@ -44,6 +42,7 @@ const Socials = () => {
                 rel="noopener noreferrer"
                 to={"https://www.codewars.com/users/ahua1994"}
             >
+                <span> Codewars Badge</span>
                 <img
                     src="https://www.codewars.com/users/ahua1994/badges/large"
                     alt="Codewars Badge"
