@@ -97,7 +97,7 @@ const CVContextProvider = ({ children }) => {
             title: "Trading Paper",
             img: "https://w7.pngwing.com/pngs/1021/831/png-transparent-work-in-process-information-architectural-engineering-others-building-text-logo-thumbnail.png",
             gif: "https://w7.pngwing.com/pngs/1021/831/png-transparent-work-in-process-information-architectural-engineering-others-building-text-logo-thumbnail.png",
-            desc: "A paper trading application using realtime stock data from Alpha Vantage. Coming Soon",
+            desc: "A paper trading application using realtime stock data. Coming Soon",
             url: "",
             github: "https://github.com/ahua1994/trading-paper",
             tools: ["React"],
