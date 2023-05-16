@@ -10,39 +10,12 @@ import Socials from "../components/Socials";
 const Home = () => {
     const { projects, certs } = useContext(CVContext);
     const navigate = useNavigate();
+    console.log("hi");
     return (
         <div className="Home">
             <Skills />
             <Socials />
             <div className="intro">
-                {/* <div className="socials">
-                    <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        to={"https://www.codewars.com/users/ahua1994"}
-                    >
-                        <img
-                            data-aos="flip-right"
-                            data-aos-duration="1600"
-                            data-aos-delay="400"
-                            style={{ marginTop: "3rem" }}
-                            src="https://www.codewars.com/users/ahua1994/badges/large"
-                            alt="Codewars Badge"
-                        />
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/andy-hua-125431168/">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </Link>
-                    <Link to={"https://www.github.com/ahua1994"}>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </Link>
-                    <Link to={"https://www.youtube.com/@ahua1994"}>
-                        <FontAwesomeIcon icon={faYoutube} />
-                    </Link>
-                    <Link to={"mailto:user.andy.hua@gmail.com"}>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </Link>
-                </div> */}
                 <h1 data-aos="fade-in" data-aos-duration="3000">
                     My name is{" "}
                     <span data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000">
@@ -70,15 +43,24 @@ const Home = () => {
                         Go To Projects {">"}
                     </p>
                 </div>
-                <div className="preview" onClick={() => navigate("/projects")}>
-                    <img
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                        data-aos-delay="800"
-                        src={projects[2].gif}
-                        alt={projects[2].title}
-                        key={projects[2].title}
-                    ></img>
+                <div
+                    className="preview"
+                    onClick={() => navigate("/projects")}
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    data-aos-delay="800"
+                >
+                    {[2, 1, 0, 4].map((num, i) => (
+                        <img
+                            style={{
+                                zIndex: 10 - i,
+                                transform: `translate(${i * -2}vw,${i * 2}vw)`,
+                            }}
+                            src={num === 2 ? projects[num].gif : projects[num].img}
+                            alt={projects[num].title}
+                            key={num}
+                        />
+                    ))}
                 </div>
             </div>
             <div className="home-certs">

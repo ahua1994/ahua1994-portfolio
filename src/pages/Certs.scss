@@ -36,6 +36,7 @@
         color: gray;
         border-radius: 50%;
         width: 50px;
+        z-index: 100;
         &:hover {
             background-color: rgba(128, 128, 128, 0.297);
             color: white;

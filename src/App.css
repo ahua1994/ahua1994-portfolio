@@ -2,6 +2,7 @@
   text-align: center;
   min-height: 100vh; 
   color: white;  
+  overflow: hidden;
 } 
 body {
   background-color: black;
