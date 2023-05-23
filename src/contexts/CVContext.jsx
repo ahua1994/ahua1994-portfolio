@@ -27,6 +27,7 @@ import blogPNG from "../helpers/thumbs/React-Blog-App.png";
 import moviePNG from "../helpers/thumbs/React-Movie-App.png";
 import recipePNG from "../helpers/thumbs/Recipe-App.png";
 import tnmaPNG from "../helpers/thumbs/True-North-Martial-Arts.png";
+import tpPNG from "../helpers/thumbs/Trading-Paper.png";
 import rpgGIF from "../helpers/gifs/CS50-Final-Project-2022.gif";
 import ytzGIF from "../helpers/gifs/YahtzeeInPython.gif";
 import p151GIF from "../helpers/gifs/Pokedex-151.gif";
@@ -34,6 +35,7 @@ import blogGIF from "../helpers/gifs/React-Blog-App.gif";
 import movieGIF from "../helpers/gifs/React-Movie-App.gif";
 import recipeGIF from "../helpers/gifs/Recipe-App.gif";
 import tnmaGIF from "../helpers/gifs/True-North-Martial-Arts.gif";
+import tpGIF from "../helpers/gifs/Trading-Paper.gif";
 
 export const CVContext = createContext();
 
@@ -95,8 +97,8 @@ const CVContextProvider = ({ children }) => {
         },
         {
             title: "Trading Paper",
-            img: "https://w7.pngwing.com/pngs/1021/831/png-transparent-work-in-process-information-architectural-engineering-others-building-text-logo-thumbnail.png",
-            gif: "https://w7.pngwing.com/pngs/1021/831/png-transparent-work-in-process-information-architectural-engineering-others-building-text-logo-thumbnail.png",
+            img: tpPNG,
+            gif: tpGIF,
             desc: "A paper trading application using realtime and historical stock data. Coming Soon",
             url: "https://trading-paper.web.app/",
             github: "https://github.com/ahua1994/trading-paper",

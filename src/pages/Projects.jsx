@@ -28,13 +28,7 @@ const Projects = () => {
                     />
                 </div>
                 {projects.map(x => (
-                    <ProjectCard
-                        x={x}
-                        setSrc={setSrc}
-                        setScale={setScale}
-                        setAlpha={setAlpha}
-                        key={x.title}
-                    />
+                    <ProjectCard {...{ x, setSrc, setScale, setAlpha }} key={x.title} />
                 ))}
             </div>
         </>
