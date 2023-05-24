@@ -69,6 +69,15 @@ const CVContextProvider = ({ children }) => {
             tools: ["Lua", "LÖVE2d"],
         },
         {
+            title: "Trading Paper",
+            img: tpPNG,
+            gif: tpGIF,
+            desc: "A paper trading application using realtime and historical stock data. Sign up for an account, manage a portfolio and have access to detailed quotes on US tickers, buy, sell, add funds and view your transaction history.",
+            url: "https://trading-paper.web.app/",
+            github: "https://github.com/ahua1994/trading-paper",
+            tools: ["React", "Firebase", "FinnData API", "TwelveData API", "AlphaVantage API"],
+        },
+        {
             title: "Yahtzee in Python",
             img: ytzPNG,
             gif: ytzGIF,
@@ -86,6 +95,7 @@ const CVContextProvider = ({ children }) => {
             github: "https://github.com/ahua1994/react-movie-app",
             tools: ["React", "Bootstrap", "Axios", "Firebase"],
         },
+
         {
             title: "React Recipe App",
             img: recipePNG,
@@ -94,15 +104,6 @@ const CVContextProvider = ({ children }) => {
             url: "https://recipe-app-ahua.vercel.app/",
             github: "https://github.com/ahua1994/recipe-app",
             tools: ["React", "Edamam API"],
-        },
-        {
-            title: "Trading Paper",
-            img: tpPNG,
-            gif: tpGIF,
-            desc: "A paper trading application using realtime and historical stock data. Coming Soon",
-            url: "https://trading-paper.web.app/",
-            github: "https://github.com/ahua1994/trading-paper",
-            tools: ["React"],
         },
 
         {

@@ -50,7 +50,7 @@ const Home = () => {
                     data-aos-duration="1200"
                     data-aos-delay="800"
                 >
-                    {[2, 1, 0, 4].map((num, i) => (
+                    {[2, 3, 0, 5].map((num, i) => (
                         <img
                             style={{
                                 zIndex: 10 - i,
