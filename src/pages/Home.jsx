@@ -48,10 +48,12 @@ const Home = () => {
                     onClick={() => navigate("/projects")}
                     data-aos="fade-left"
                     data-aos-duration="1200"
-                    data-aos-delay="800"
                 >
-                    {[2, 3, 0, 5].map((num, i) => (
+                    {[2, 7, 0, 5].map((num, i) => (
                         <img
+                            data-aos="fade-left"
+                            data-aos-duration="1200"
+                            data-aos-delay={`${400 + i * 300}`}
                             style={{
                                 zIndex: 10 - i,
                                 transform: `translate(${i * -2}vw,${i * 2}vw)`,
