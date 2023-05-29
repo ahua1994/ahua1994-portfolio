@@ -16,7 +16,7 @@ const Socials = () => {
             <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                to="https://www.linkedin.com/in/andy-hua-125431168/"
+                to="https://www.linkedin.com/in/andy-hua/"
             >
                 <span> LinkedIn Andy Hua</span>
                 <FontAwesomeIcon size="2x" icon={faLinkedin} style={{ color: "#0077b5" }} />
