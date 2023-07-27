@@ -115,6 +115,15 @@ const CVContextProvider = ({ children }) => {
             github: "https://github.com/ahua1994/true-north-ahua",
             tools: ["React"],
         },
+        {
+            title: "Move Over App",
+            img: "",
+            gif: "",
+            desc: "Mobile and Web Application to keep track of all your items during a trip, move or delivery.",
+            url: "",
+            github: "",
+            tools: ["NextJS", "Toastify", "Django"],
+        },
     ];
 
     const skills = [

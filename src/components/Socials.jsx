@@ -33,8 +33,8 @@ const Socials = () => {
                 <span> YT ahua1994</span>
                 <FontAwesomeIcon size="2x" icon={faYoutube} style={{ color: "#FF1A1A" }} />
             </Link>
-            <Link target="_blank" rel="noopener noreferrer" to={"mailto:user.andy.hua@gmail.com"}>
-                <span> user.andy.hua@gmail.com</span>
+            <Link target="_blank" rel="noopener noreferrer" to={"mailto:andyhua604@gmail.com"}>
+                <span> andyhua604@gmail.com</span>
                 <FontAwesomeIcon size="2x" icon={faEnvelope} style={{ color: "#FFBF00" }} />
             </Link>
             <Link
