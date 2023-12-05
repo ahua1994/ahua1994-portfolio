@@ -10,7 +10,6 @@ import Socials from "../components/Socials";
 const Home = () => {
     const { projects, certs } = useContext(CVContext);
     const navigate = useNavigate();
-    console.log("hi");
     return (
         <div className="Home">
             <Skills />
