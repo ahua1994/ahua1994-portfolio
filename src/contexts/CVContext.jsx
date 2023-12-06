@@ -117,8 +117,8 @@ const CVContextProvider = ({ children }) => {
         },
         {
             title: "Move Over App",
-            img: "https://stock.adobe.com/ca/images/work-in-progress-text-written-on-red-rectangle-stamp/517315479",
-            gif: "https://stock.adobe.com/ca/images/work-in-progress-text-written-on-red-rectangle-stamp/517315479",
+            img: "https://t3.ftcdn.net/jpg/05/17/31/54/240_F_517315479_5APCsHqS3fFO0NAHewzDu9XS8Y2PhLBy.jpg",
+            gif: "https://t3.ftcdn.net/jpg/05/17/31/54/240_F_517315479_5APCsHqS3fFO0NAHewzDu9XS8Y2PhLBy.jpg",
             desc: "Mobile and Web Application to keep track of all your items during a trip, move or delivery.",
             url: "",
             github: "",
