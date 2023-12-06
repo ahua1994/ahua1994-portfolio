@@ -42,13 +42,13 @@ export const CVContext = createContext();
 const CVContextProvider = ({ children }) => {
     const projects = [
         {
-            title: "Gen 1 Pokedex",
-            img: p151PNG,
-            gif: p151GIF,
-            desc: "Generation One Pokedex for the original 151, created with React and the PokeAPI. Styled with Pure SCSS. May expand to include other generations in the future.",
-            url: "https://pokedex-151-ahua.vercel.app/",
-            github: "https://github.com/ahua1994/pokedex-app",
-            tools: ["React", "SCSS", "PokeAPI"],
+            title: "Trading Paper",
+            img: tpPNG,
+            gif: tpGIF,
+            desc: "A paper trading application using realtime and historical stock data. Sign up for an account, manage a portfolio and have access to detailed quotes on US tickers, buy, sell, add funds and view your transaction history.",
+            url: "https://trading-paper.web.app/",
+            github: "https://github.com/ahua1994/trading-paper",
+            tools: ["React", "Firebase", "FinnData API", "TwelveData API", "AlphaVantage API"],
         },
         {
             title: "React Blog App",
@@ -69,13 +69,13 @@ const CVContextProvider = ({ children }) => {
             tools: ["Lua", "LÖVE2d"],
         },
         {
-            title: "Trading Paper",
-            img: tpPNG,
-            gif: tpGIF,
-            desc: "A paper trading application using realtime and historical stock data. Sign up for an account, manage a portfolio and have access to detailed quotes on US tickers, buy, sell, add funds and view your transaction history.",
-            url: "https://trading-paper.web.app/",
-            github: "https://github.com/ahua1994/trading-paper",
-            tools: ["React", "Firebase", "FinnData API", "TwelveData API", "AlphaVantage API"],
+            title: "Gen 1 Pokedex",
+            img: p151PNG,
+            gif: p151GIF,
+            desc: "Generation One Pokedex for the original 151, created with React and the PokeAPI. Styled with Pure SCSS. May expand to include other generations in the future.",
+            url: "https://pokedex-151-ahua.vercel.app/",
+            github: "https://github.com/ahua1994/pokedex-app",
+            tools: ["React", "SCSS", "PokeAPI"],
         },
         {
             title: "Yahtzee in Python",
@@ -117,8 +117,8 @@ const CVContextProvider = ({ children }) => {
         },
         {
             title: "Move Over App",
-            img: "",
-            gif: "",
+            img: "https://stock.adobe.com/ca/images/work-in-progress-text-written-on-red-rectangle-stamp/517315479",
+            gif: "https://stock.adobe.com/ca/images/work-in-progress-text-written-on-red-rectangle-stamp/517315479",
             desc: "Mobile and Web Application to keep track of all your items during a trip, move or delivery.",
             url: "",
             github: "",
